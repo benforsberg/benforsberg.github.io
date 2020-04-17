@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-direction: column;
     margin: 60px auto;
     width: 70%;
     background-color: lightgray;
@@ -32,7 +34,12 @@ p {
     line-height: 1.4em;
     color: #333;
 }
-footer {
+
+.content{
+    flex: 1 0 auto;
+}
+.footer {
+    flex-shrink: 0;
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
     color: #333;
